@@ -1,0 +1,20 @@
+.user-access-control {
+    background-color: #fff;
+    padding: 20px; /* Adjusted padding for consistency */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 70px 20px 20px 220px; /* Adjust margin to account for fixed navbar and top navbar */
+}
+
+.user-access-control h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 20px;
+}
+
+.user-access-control p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 14px;
+}

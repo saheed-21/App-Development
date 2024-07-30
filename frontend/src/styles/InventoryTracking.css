@@ -1,0 +1,90 @@
+.inventory-tracking {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 70px 20px 20px 220px; /* Add margin to account for the fixed navbar, top navbar, and right gap */
+}
+
+.inventory-tracking h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.inventory-tracking p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.inventory-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+.stat h4 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.stat p {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.inventory-list {
+    margin-bottom: 20px;
+}
+
+.inventory-list h4 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.inventory-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.inventory-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.inventory-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory-actions button {
+    flex: 1;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.inventory-actions button:hover {
+    background-color: #0056b3;
+}

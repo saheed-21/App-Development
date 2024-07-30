@@ -1,0 +1,70 @@
+.navbar {
+    position: fixed;
+    top: 50px; /* Adjusted to be below the top navbar */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 50px); /* Adjusted to account for the top navbar height */
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.3s; /* Smooth transition for width change */
+}
+
+.navbar.collapsed {
+    width: 60px; /* Minimized width */
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar-list li {
+    width: 100%;
+}
+
+.navbar-list li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.navbar-list li a:hover {
+    background-color: #0056b3;
+}
+
+.navbar-list li a.active {
+    background-color: #004080;
+}
+
+.navbar-list li a span {
+    margin-left: 10px; /* Space between icon and text */
+}
+
+.navbar.collapsed .navbar-list li a {
+    justify-content: center;
+    padding: 10px 0; /* Adjusted padding for minimized state */
+}
+
+.navbar.collapsed .navbar-list li a span {
+    display: none; /* Hide the text when minimized */
+}
+
+/* Optional: Add transitions for other properties if needed */
+.navbar-list li a,
+.navbar.collapsed .navbar-list li a {
+    transition: padding 0.3s, text-align 0.3s; /* Smooth transition for padding and text alignment changes */
+}

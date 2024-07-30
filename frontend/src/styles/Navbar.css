@@ -1,0 +1,56 @@
+/* Navbar.css */
+
+.navbar {
+    width: 250px; /* Default width */
+    transition: width 0.3s;
+    position: fixed;
+    top: 50px; /* Adjust based on top navbar height */
+    left: 0;
+    height: calc(100vh - 50px); /* Adjust based on top navbar height */
+}
+
+.navbar.collapsed {
+    width: 80px; /* Minimized width */
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-list li span {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.navbar.collapsed .navbar-list li span {
+    display: none; /* Hide text when minimized */
+}
+
+.navbar-list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-list li a.active {
+    color: #007bff; /* Highlight color for active link */
+}
+
+/* Adjust icon position and spacing */
+.navbar-list li a {
+    padding-left: 10px; /* Add left padding */
+    box-sizing: border-box;
+}
+
+.navbar-list li svg {
+    margin-left: 0; /* Ensure icons are aligned properly */
+}
